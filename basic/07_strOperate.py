@@ -38,3 +38,36 @@ print(str.center(20))
 
 newstr = str.center(20)
 print(newstr)
+
+#删除空格
+name = '       xiaoming       '
+print(name.strip())
+print(name.rstrip())
+print(name.lstrip())
+
+
+#切割字符串partition
+#与split相似
+#区别partition包括根据切割的字符串
+
+name = "Apple is red, pipe is yellogreen"
+print(name.partition('is'))
+#print(name.lpartition('is'))
+print(name.rpartition('is'))
+
+#判断字符串的类型
+
+str = '    '
+print(str.isspace()) #判断是否是纯空格
+str = 'abd'
+print(str.isalpha()) #判断是否是纯字母
+str = '1231'
+print(str.isdigit()) #判断是否是纯数字
+str = 'abc234'
+print(str.isalnum())  #是否是混合
+
+#将数组转换为字符串
+arr = ['xiaoming', 'danny', 'xiaowang']
+joinStr = '_'
+print(joinStr.join(arr))
+
