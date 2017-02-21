@@ -27,4 +27,4 @@ print(jsonStr)
 
 personObject = json.loads(jsonStr)
 print(personObject)
-print(type (personObject))
+print(type(personObject))
